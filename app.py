@@ -78,11 +78,7 @@ with col2:
     seller_type = st.selectbox("Seller Type", ["Individual", "Dealer", "Trustmark Dealer"])
     transmission_type = st.selectbox("Transmission", ["Manual", "Automatic"])
 
-st.caption(
-    "⚠️ Confirm these dropdown values exactly match the categories in your dataset "
-    "(run `Car_data['fuel_type'].unique()` etc. in the notebook to check) — mismatches "
-    "will be treated as an unseen category and encoded as all-zeros."
-)
+st.caption("⚠️ Please Confirm the values captured are as accurate as possible to get the most accurate results.")
 
 predict_clicked = st.button("Predict Selling Price", type="primary")
 
