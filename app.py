@@ -153,8 +153,7 @@ if predict_clicked:
         st.metric(label="Estimated Price", value=f"₹{prediction:,.0f}")
 
         st.caption(
-            "Based on a Random Forest model with a test-set R² of ~0.89 and an average "
-            "error (MAE) of roughly ₹65,700. Actual prices may vary based on factors not "
+            "Based on a Random Forest model Actual prices may vary based on factors not "
             "captured by the model (condition, accident history, negotiation, etc.)."
         )
     except Exception as e:
